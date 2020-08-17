@@ -1,0 +1,57 @@
+<head>
+<meta name="viewport" content="width=device-width">
+<style>
+@-webkit-keyframes sway {
+from {-webkit-transform: rotate(-10deg);}
+to {-webkit-transform: rotate(10deg);}
+}
+@-moz-keyframes sway {
+from {-moz-transform: rotate(-10deg);}
+to {-moz-transform: rotate(10deg);}
+}
+@keyframes sway {
+from {transform: rotate(-10deg);}
+to {transform: rotate(10deg);}
+}
+img {
+margin: 0 auto;
+  vertical-align: middle;
+  animation: sway 2s linear 0s infinite alternate;
+  -moz-animation: sway 2s linear 0s infinite alternate;
+  -webkit-animation: sway 2s linear 0s infinite alternate;
+}
+div {
+  display: inline-block;
+  white-space: nowrap;
+}
+body {
+  text-align: center;
+}
+
+@media only screen 
+and (max-device-width : 480px) {
+  div {
+    display: block;
+  }
+}
+
+</style>
+<script src="../jq.min.js"></script>
+<script src="halloween.js"></script>
+
+
+<title>How many days? HOW MANY?</title>
+<body>
+    <div><img src="ghost.png"></div>
+    <div>~~only <div id="days">N</div> days left until Halloween~~</div>
+    <div><img src="ghost.png"></div>
+
+<audio autoplay>
+  <source src="addams.m4a" type="audio/mp4">
+  <source src="addams.ogg" type="audio/ogg">
+</audio>
+
+<!-- ghost graphic from Google Hangouts emoji -->
+<!-- addams theme from https://www.youtube.com/watch?v=qR6zRNSkvV4 -->
+<!-- css transform courtesy @ironfroggy -->
+</body>
